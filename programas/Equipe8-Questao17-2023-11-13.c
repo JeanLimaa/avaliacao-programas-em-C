@@ -1,23 +1,17 @@
 #include <stdio.h>
 #include <math.h>
 
-int main()
-{
+int main() {
     double numerador, denominador, resultado_da_fracao, acumulador;
 
-    for (int i = 1; i <= 6; i++)
-    {
-        for (int k = 3; k <= 7; k++)
-        {
-            numerador = (pow(2, 3 * i + k) * k);
-            denominador = i * k + 1;
+    for(int i = 1; i <= 9; i++){
+        numerador = pow(2, 3*i+pow(i, 2));
+        denominador = i + 1;
 
-            resultado_da_fracao = numerador / denominador;
-
-            acumulador += resultado_da_fracao;
-            printf("Indice de i: %d / Indice de k: %d\n Valor da soma: %.2f\n\n", i, k, acumulador);
-        }
+        resultado_da_fracao = numerador / denominador;
+        acumulador +=  resultado_da_fracao;
+        printf("Indice: %d / Valor da soma: %2.f\n", i,acumulador);        
     }
 
-    printf("Total: %.2f", acumulador);
+    printf("Total: %2.f", acumulador);
 }
