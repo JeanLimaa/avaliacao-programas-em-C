@@ -4,7 +4,7 @@
 int main() {
     double numerador, denominador, resultado_da_fracao, acumulador;
 
-    for(int i = 1; i < 9; i++){
+    for(int i = 1; i <= 9; i++){
         numerador = pow(2, 3*i+pow(i, 2));
         denominador = i + 1;
 
