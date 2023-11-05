@@ -9,9 +9,9 @@ int main() {
         denominador = i + 1;
 
         resultado_da_fracao = numerador / denominador;
-
         acumulador +=  resultado_da_fracao;
+        printf("Indice: %d / Valor da soma: %2.f\n", i,acumulador);        
     }
 
-    prtinf("%2.f", acumulador);
+    printf("Total: %2.f", acumulador);
 }
