@@ -18,7 +18,7 @@ void main() {
                   x2 = (-coeficientes[1]-sqrt(delta))/(2*coeficientes[0]);
                   printf("x1 = %.2f\nx2 = %.2f\n",x1,x2);
                        }
-                       if(5 < x1 < 10 && 5 < x2 < 10){printf("As raízes sao maiores que 5 e menores que 10 concomitantemente, portanto sua soma é: %.2f\n",x1+x2);}
+                       if ( x1 < 10 && x2 < 10 && x1 > 5 && x2 > 5){printf("As raízes sao maiores que 5 e menores que 10 concomitantemente, portanto sua soma é: %.2f\n",x1+x2);}
                        if(x1 < 2 && x2 < 2){
                            printf("As raízes sao menores que 2, portanto seu produto é: %.2f\n",x1*x2);
                        }
