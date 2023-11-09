@@ -1,4 +1,3 @@
-// Online C compiler to run C program online
 #include <stdio.h>
 
 void main() {
@@ -8,14 +7,11 @@ void main() {
     char endereco [100];
     
     printf("Digite seu nome: ");
-    scanf("%99s",&nome);
-    getchar();
+    gets (nome);
     printf("Digite seu endereço: ");
-    scanf("%99s",&endereco);
-    getchar();
+    gets (endereco);
     printf("Digite seu telefone: ");
-    scanf("%11s",&telefone);
-    getchar();
+    gets (telefone);
     printf("Digite sua idade: ");
     scanf("%d",&idade);
     printf("Seu nome é %s, voce tem %d anos, mora na rua %s, e seu telefone é %s",nome,idade,endereco,telefone);
