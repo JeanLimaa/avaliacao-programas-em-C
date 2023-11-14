@@ -3,8 +3,8 @@
 
 void main() {
 int numeros[]={2,4,35,50,23,17,9,12,27,5,14,2,3,4,1,2,5,6,8,9};
-int subprimos[20], contadorprimo = 0;
-float media = 0, mediap = 0, somat = 0, somati = 0, normalizados[20], maior = 0;
+int subprimos[20], contadorprimo = 0,maior = 0;
+float media = 0, mediap = 0, somat = 0, somati = 0, normalizados[20];
 for (int i = 0; i < 20; i++){
     if(numeros[i]>maior)maior = numeros[i];
     somat += numeros[i];
@@ -29,7 +29,7 @@ for (int i = 0; i < 20; i++){
       }
   }
   for(int i = 0; i < 20; i++){
-      normalizados[i] = numeros[i]/maior;
+      normalizados[i] = numeros[i]/(float)maior;
   }
 media = somat/20;
 mediap = somati/somat;
